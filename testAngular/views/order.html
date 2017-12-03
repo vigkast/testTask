@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-12 headerSection text-center">
+            <div class="col-md-4" ui-sref="product">
+                <button class="btn btn-warning" href="">Product</button>
+            </div>
+            <div class="col-md-4" ng-click="logout();">
+                <button class="btn btn-danger" href="">Logout</button>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-20">
+        <div class="col-md-12 headerSection mt-20" ng-if="orders.length > 0" ng-repeat="order in orders">
+            <span><b>Order-Id : {{order.orderId}}</b></span>
+            <span class="ml-10">SubTotal : {{order.amount}}</span>
+            <div class="mt-10" ng-repeat="product in order.orderProduct">
+                <img ng-src="{{product.product.img}}" width="100" height="100">
+                <span>Name - {{product.product.name}}</span>
+                <br>
+                <span>Description - {{product.product.description}}</span>
+                <br>
+                <span>Type - {{product.subtype}}</span>
+                <br>
+                <span>Price - {{product.product.cost}}</span>
+            </div>
+        </div>
+        <div class="" ng-if="orders.length === 0">
+            <span> No order found.</span>
+        </div>
+    </div>
+</div>
