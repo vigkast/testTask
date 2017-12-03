@@ -39,6 +39,15 @@ body {
     margin-left: 10px;
 }
 
+.border-div {
+    border: solid 2px;
+}
+
+.spanBold {
+    font-weight: 900;
+    font-size: large;
+}
+
 .charge-div {
     color: white;
     background-color: #586ec8;

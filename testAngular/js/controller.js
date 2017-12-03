@@ -17,7 +17,7 @@ angular.module("testcontroller", ["testnavigation", "ui.bootstrap"])
                         controller: 'LoginCtrl',
                         scope: $scope,
                         size: "sm",
-                        backdrop: false
+                        backdrop: true
                     });
                     $timeout(function() {
                         modal.close();
@@ -80,7 +80,6 @@ angular.module("testcontroller", ["testnavigation", "ui.bootstrap"])
                         var modal = $uibModal.open({
                             animation: true,
                             templateUrl: 'views/selectType.html',
-                            // controller: 'ProductCtrl',
                             scope: $scope,
                             size: "sm",
                             backdrop: true
@@ -113,7 +112,6 @@ angular.module("testcontroller", ["testnavigation", "ui.bootstrap"])
                     var modal = $uibModal.open({
                         animation: true,
                         templateUrl: 'views/selectType.html',
-                        // controller: 'ProductCtrl',
                         scope: $scope,
                         size: "sm",
                         backdrop: true
