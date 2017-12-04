@@ -15,7 +15,7 @@
                 <span class="spanBold">Click on product to add to cart.</span>
             </div>
             <div class="charge-div" ng-click="createOrder()" ng-if="showCharge">
-                <span>CHECKOUT | {{count}} | SubTotal - Rs.{{amount}}</span>
+                <span>CHECKOUT  |   Items - {{count}}   |   SubTotal - Rs.{{amount}}</span>
             </div>
             <div class="mt-10 border-div" ng-if="products.length > 0" ng-repeat="product in products">
                 <div class="ml-10" ng-click="selectProduct(product);">
