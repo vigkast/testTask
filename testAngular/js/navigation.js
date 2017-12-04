@@ -1,4 +1,4 @@
-var adminurl = "http://localhost:1337/";
+var adminurl = "http://localhost:900/";
 angular.module('testnavigation', [])
     .factory("NavigationService", function($http) {
         return {
